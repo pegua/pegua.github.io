@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,18 +101,18 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Set/Get methods for input quantities</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Methods to set and get input quantities </p>
 </div></td></tr>
-<tr class="memitem:a433812cb175a5624098b9e185ccebf5c"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a433812cb175a5624098b9e185ccebf5c">setAng</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:a433812cb175a5624098b9e185ccebf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint positions in the specified group (if no group is specified, set the joint positions of all the tree)  <a href="#a433812cb175a5624098b9e185ccebf5c"></a><br/></td></tr>
-<tr class="memitem:abe6667773d1eaa041bb128fed5075244"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#abe6667773d1eaa041bb128fed5075244">getAng</a> (const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:abe6667773d1eaa041bb128fed5075244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint positions in the specified group (if no group is specified, get the joint positions of all the tree)  <a href="#abe6667773d1eaa041bb128fed5075244"></a><br/></td></tr>
-<tr class="memitem:ac8126b7e1f7b15029da063fd50ce17f1"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ac8126b7e1f7b15029da063fd50ce17f1">setDAng</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:ac8126b7e1f7b15029da063fd50ce17f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint speeds in the specified group (if no group is specified, set the joint speeds of all the tree)  <a href="#ac8126b7e1f7b15029da063fd50ce17f1"></a><br/></td></tr>
-<tr class="memitem:a88e6fcb3a458a5fe34d1dabb5d5f7cbb"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a88e6fcb3a458a5fe34d1dabb5d5f7cbb">getDAng</a> (const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:a88e6fcb3a458a5fe34d1dabb5d5f7cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint speeds in the specified group (if no group is specified, get the joint speeds of all the tree)  <a href="#a88e6fcb3a458a5fe34d1dabb5d5f7cbb"></a><br/></td></tr>
-<tr class="memitem:ad79d0fdb133447604d5b5c076f8b0fd0"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ad79d0fdb133447604d5b5c076f8b0fd0">setD2Ang</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:ad79d0fdb133447604d5b5c076f8b0fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint accelerations in the specified group (if no group is specified, set the joint accelerations of all the tree)  <a href="#ad79d0fdb133447604d5b5c076f8b0fd0"></a><br/></td></tr>
-<tr class="memitem:ae6c5dc8e49c2e71745e97f645ceb55a8"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ae6c5dc8e49c2e71745e97f645ceb55a8">getD2Ang</a> (const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:ae6c5dc8e49c2e71745e97f645ceb55a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint speeds in the specified group (if no group is specified, get the joint speeds of all the tree)  <a href="#ae6c5dc8e49c2e71745e97f645ceb55a8"></a><br/></td></tr>
+<tr class="memitem:a1ae811703e18cfdd56fc012160c7f236"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a1ae811703e18cfdd56fc012160c7f236">setAng</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a1ae811703e18cfdd56fc012160c7f236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint positions in the specified part (if no part is specified, set the joint positions of all the tree)  <a href="#a1ae811703e18cfdd56fc012160c7f236"></a><br/></td></tr>
+<tr class="memitem:a74a4ee1a0f1b622d2297afdfde110c91"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a74a4ee1a0f1b622d2297afdfde110c91">getAng</a> (const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a74a4ee1a0f1b622d2297afdfde110c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint positions in the specified part (if no part is specified, get the joint positions of all the tree)  <a href="#a74a4ee1a0f1b622d2297afdfde110c91"></a><br/></td></tr>
+<tr class="memitem:ab7cf8f34e1ac85a67cc5f6868bd8e814"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ab7cf8f34e1ac85a67cc5f6868bd8e814">setDAng</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:ab7cf8f34e1ac85a67cc5f6868bd8e814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint speeds in the specified part (if no part is specified, set the joint speeds of all the tree)  <a href="#ab7cf8f34e1ac85a67cc5f6868bd8e814"></a><br/></td></tr>
+<tr class="memitem:aa559663eddb21bd5dc083e0000f42a9e"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#aa559663eddb21bd5dc083e0000f42a9e">getDAng</a> (const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:aa559663eddb21bd5dc083e0000f42a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint speeds in the specified part (if no part is specified, get the joint speeds of all the tree)  <a href="#aa559663eddb21bd5dc083e0000f42a9e"></a><br/></td></tr>
+<tr class="memitem:a6df842178b1b4a362efff573c0148497"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a6df842178b1b4a362efff573c0148497">setD2Ang</a> (const yarp::sig::Vector &amp;_q, const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a6df842178b1b4a362efff573c0148497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set joint accelerations in the specified part (if no part is specified, set the joint accelerations of all the tree)  <a href="#a6df842178b1b4a362efff573c0148497"></a><br/></td></tr>
+<tr class="memitem:acc402fbb2abfd9a23e59bb683e9bdd8a"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#acc402fbb2abfd9a23e59bb683e9bdd8a">getD2Ang</a> (const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:acc402fbb2abfd9a23e59bb683e9bdd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint speeds in the specified part (if no part is specified, get the joint speeds of all the tree)  <a href="#acc402fbb2abfd9a23e59bb683e9bdd8a"></a><br/></td></tr>
 <tr class="memitem:ac72d0d72d02d80c18130a768f9751e75"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ac72d0d72d02d80c18130a768f9751e75">setInertialMeasure</a> (const yarp::sig::Vector &amp;w0, const yarp::sig::Vector &amp;dw0, const yarp::sig::Vector &amp;ddp0)=0</td></tr>
 <tr class="memdesc:ac72d0d72d02d80c18130a768f9751e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inertial sensor measurements.  <a href="#ac72d0d72d02d80c18130a768f9751e75"></a><br/></td></tr>
 <tr class="memitem:ac0cb3b712cded5712e23497d172a4cc3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ac0cb3b712cded5712e23497d172a4cc3">getInertialMeasure</a> (yarp::sig::Vector &amp;w0, yarp::sig::Vector &amp;dw0, yarp::sig::Vector &amp;ddp0)=0</td></tr>
@@ -126,18 +126,36 @@ Public Member Functions</h2></td></tr>
 </div></td></tr>
 <tr class="memitem:ae8b9620d95190b39e1836ca26e897ba5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ae8b9620d95190b39e1836ca26e897ba5">solveKinematics</a> ()=0</td></tr>
 <tr class="memdesc:ae8b9620d95190b39e1836ca26e897ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the kinematic phase (recursive calculation of position, velocity, acceleration of each link) of the RNE algorithm.  <a href="#ae8b9620d95190b39e1836ca26e897ba5"></a><br/></td></tr>
-<tr class="memitem:abc95c510a7beaa32648ea46139f71106"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#abc95c510a7beaa32648ea46139f71106">solveWrench</a> ()=0</td></tr>
-<tr class="memdesc:abc95c510a7beaa32648ea46139f71106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the dynamical phase (recursive calculation of internal wrenches and of torques) of the RNE algorithm for each subtree.  <a href="#abc95c510a7beaa32648ea46139f71106"></a><br/></td></tr>
+<tr class="memitem:a6fddb6dca3eb9cc8540de1228b9631af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a6fddb6dca3eb9cc8540de1228b9631af">solveWrench</a> (bool ignore_sensor_measures=false)=0</td></tr>
+<tr class="memdesc:a6fddb6dca3eb9cc8540de1228b9631af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the dynamical phase (recursive calculation of internal wrenches and of torques) of the RNE algorithm for each subtree.  <a href="#a6fddb6dca3eb9cc8540de1228b9631af"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Get methods for output quantities</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Methods to get output quantities </p>
 </div></td></tr>
-<tr class="memitem:abfd888d5d06f536c2680a334db6e1849"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#abfd888d5d06f536c2680a334db6e1849">getTorques</a> (const std::string &amp;group_name=&quot;&quot;)=0</td></tr>
-<tr class="memdesc:abfd888d5d06f536c2680a334db6e1849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint torques in the specified group (if no group is specified, get the joint speeds of all the tree)  <a href="#abfd888d5d06f536c2680a334db6e1849"></a><br/></td></tr>
+<tr class="memitem:a39a98363539c4d5b231faa25938b4d7d"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a39a98363539c4d5b231faa25938b4d7d">getTorques</a> (const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a39a98363539c4d5b231faa25938b4d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joint torques in the specified part (if no part is specified, get the joint torques of all the tree)  <a href="#a39a98363539c4d5b231faa25938b4d7d"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods related to contact forces</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This methods are related both to input and output of the esimation: the iCub::skinDynLib::dynContactList is used both to specify the unkown contacts via setContacts, and also to get the result of the estimation via getContacts</p>
+<dl class="section note"><dt>Note</dt><dd>If for a given subtree no contact is given, a default concact is assumed, for example ad the end effector </dd></dl>
+</div></td></tr>
+<tr class="memitem:a65bef3abe7caa49fd66c0219af9ba9e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a65bef3abe7caa49fd66c0219af9ba9e9">setContacts</a> (const iCub::skinDynLib::dynContactList &amp;contacts)</td></tr>
+<tr class="memdesc:a65bef3abe7caa49fd66c0219af9ba9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified contacts.  <a href="#a65bef3abe7caa49fd66c0219af9ba9e9"></a><br/></td></tr>
+<tr class="memitem:a6a94633b6857377314a1ff1a2bca0e5f"><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
+iCub::skinDynLib::dynContactList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a6a94633b6857377314a1ff1a2bca0e5f">getContacts</a> () const </td></tr>
+<tr class="memdesc:a6a94633b6857377314a1ff1a2bca0e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the contacts list, containing the results of the estimation if <a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a6fddb6dca3eb9cc8540de1228b9631af" title="Execute the dynamical phase (recursive calculation of internal wrenches and of torques) of the RNE al...">solveWrench()</a> was called.  <a href="#a6a94633b6857377314a1ff1a2bca0e5f"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods related to Center of Mass calculation</div></td></tr>
+<tr class="memitem:a039375d5e30932857b57899efab2f150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a039375d5e30932857b57899efab2f150">computeCOM</a> ()</td></tr>
+<tr class="memdesc:a039375d5e30932857b57899efab2f150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the computation of the center of mass (COM) of the tree.  <a href="#a039375d5e30932857b57899efab2f150"></a><br/></td></tr>
+<tr class="memitem:ac7c760d36d91621abad5907df245e1ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#ac7c760d36d91621abad5907df245e1ae">computeCOMjacobian</a> ()</td></tr>
+<tr class="memdesc:ac7c760d36d91621abad5907df245e1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the computation of the center of mass jacobian of the tree.  <a href="#ac7c760d36d91621abad5907df245e1ae"></a><br/></td></tr>
+<tr class="memitem:a39bcd370f122b50906c7f094baa3f008"><td class="memItemLeft" align="right" valign="top">virtual yarp::sig::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a39bcd370f122b50906c7f094baa3f008">getCOM</a> (const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a39bcd370f122b50906c7f094baa3f008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Center of Mass of the specified part (if no part is specified, get the joint torques of all the tree)  <a href="#a39bcd370f122b50906c7f094baa3f008"></a><br/></td></tr>
+<tr class="memitem:a78db9b2f394c81140856e7e8da316e68"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a78db9b2f394c81140856e7e8da316e68">getCOMJacobian</a> (const yarp::sig::Matrix &amp;jac, const std::string &amp;part_name=&quot;&quot;)=0</td></tr>
+<tr class="memdesc:a78db9b2f394c81140856e7e8da316e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Center of Mass Kacobian of the specified part (if no part is specified, get the joint torques of all the tree)  <a href="#a78db9b2f394c81140856e7e8da316e68"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>An abstract class for calculating the torques and the external wrenches in a Rigid Body Dynamic tree, using kinetic information (linear acceleration, angular velocity and angular acceleration of one arbitrary link, joint positions, velocities, acceleration) and FT sensor measures. </p>
 </div><h2>Member Function Documentation</h2>
-<a class="anchor" id="a433812cb175a5624098b9e185ccebf5c"></a>
+<a class="anchor" id="a1ae811703e18cfdd56fc012160c7f236"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -154,7 +172,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,11 +187,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set joint positions in the specified group (if no group is specified, set the joint positions of all the tree) </p>
+<p>Set joint positions in the specified part (if no part is specified, set the joint positions of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_q</td><td>vector of joints position </td></tr>
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joint to set </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joint to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -181,7 +199,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abe6667773d1eaa041bb128fed5075244"></a>
+<a class="anchor" id="a74a4ee1a0f1b622d2297afdfde110c91"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -192,7 +210,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual yarp::sig::Vector iCub::iDynTree::iDynTreeInterface::getAng </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -203,10 +221,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get joint positions in the specified group (if no group is specified, get the joint positions of all the tree) </p>
+<p>Get joint positions in the specified part (if no part is specified, get the joint positions of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to set </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +232,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac8126b7e1f7b15029da063fd50ce17f1"></a>
+<a class="anchor" id="ab7cf8f34e1ac85a67cc5f6868bd8e814"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -231,7 +249,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -246,11 +264,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set joint speeds in the specified group (if no group is specified, set the joint speeds of all the tree) </p>
+<p>Set joint speeds in the specified part (if no part is specified, set the joint speeds of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_q</td><td>vector of joint speeds </td></tr>
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to set </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,7 +276,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88e6fcb3a458a5fe34d1dabb5d5f7cbb"></a>
+<a class="anchor" id="aa559663eddb21bd5dc083e0000f42a9e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -269,7 +287,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual yarp::sig::Vector iCub::iDynTree::iDynTreeInterface::getDAng </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -280,10 +298,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get joint speeds in the specified group (if no group is specified, get the joint speeds of all the tree) </p>
+<p>Get joint speeds in the specified part (if no part is specified, get the joint speeds of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to get </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to get </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,7 +309,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad79d0fdb133447604d5b5c076f8b0fd0"></a>
+<a class="anchor" id="a6df842178b1b4a362efff573c0148497"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -308,7 +326,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -323,11 +341,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set joint accelerations in the specified group (if no group is specified, set the joint accelerations of all the tree) </p>
+<p>Set joint accelerations in the specified part (if no part is specified, set the joint accelerations of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_q</td><td>vector of joint speeds </td></tr>
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to set </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,7 +353,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae6c5dc8e49c2e71745e97f645ceb55a8"></a>
+<a class="anchor" id="acc402fbb2abfd9a23e59bb683e9bdd8a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -346,7 +364,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual yarp::sig::Vector iCub::iDynTree::iDynTreeInterface::getD2Ang </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -357,10 +375,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get joint speeds in the specified group (if no group is specified, get the joint speeds of all the tree) </p>
+<p>Get joint speeds in the specified part (if no part is specified, get the joint speeds of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to get </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to get </td></tr>
   </table>
   </dd>
 </dl>
@@ -554,7 +572,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if solveWrench(ignore_sensor_measures=true) is called, this function get the "simulated" measure of the sensor from the RNEA backward propagation of wrenches </dd></dl>
 
 </div>
 </div>
@@ -584,7 +603,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abc95c510a7beaa32648ea46139f71106"></a>
+<a class="anchor" id="a6fddb6dca3eb9cc8540de1228b9631af"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -594,7 +613,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool iCub::iDynTree::iDynTreeInterface::solveWrench </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_sensor_measures</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -606,11 +626,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Execute the dynamical phase (recursive calculation of internal wrenches and of torques) of the RNE algorithm for each subtree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore_sensor_measures</td><td>if true, the sensor measures are ignored and RNEA wrench phase is calculated from the leafs to the robot root, calculating consequently the corresponding torque and sensor measures </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abfd888d5d06f536c2680a334db6e1849"></a>
+<a class="anchor" id="a39a98363539c4d5b231faa25938b4d7d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -621,7 +647,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual yarp::sig::Vector iCub::iDynTree::iDynTreeInterface::getTorques </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>group_name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -632,14 +658,170 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get joint torques in the specified group (if no group is specified, get the joint speeds of all the tree) </p>
+<p>Get joint torques in the specified part (if no part is specified, get the joint torques of all the tree) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">group_name</td><td>optional: the name of the group of joints to get </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to get </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector of joint torques </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a65bef3abe7caa49fd66c0219af9ba9e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iCub::iDynTree::iDynTreeInterface::setContacts </td>
+          <td>(</td>
+          <td class="paramtype">const iCub::skinDynLib::dynContactList &amp;&#160;</td>
+          <td class="paramname"><em>contacts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the specified contacts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contacts</td><td>the list of the concacts on the iDynTree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if operation succeeded, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a94633b6857377314a1ff1a2bca0e5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const iCub::skinDynLib::dynContactList&amp; iCub::iDynTree::iDynTreeInterface::getContacts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the contacts list, containing the results of the estimation if <a class="el" href="classi_cub_1_1i_dyn_tree_1_1i_dyn_tree_interface.html#a6fddb6dca3eb9cc8540de1228b9631af" title="Execute the dynamical phase (recursive calculation of internal wrenches and of torques) of the RNE al...">solveWrench()</a> was called. </p>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the external contact list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a039375d5e30932857b57899efab2f150"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iCub::iDynTree::iDynTreeInterface::computeCOM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs the computation of the center of mass (COM) of the tree. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7c760d36d91621abad5907df245e1ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iCub::iDynTree::iDynTreeInterface::computeCOMjacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs the computation of the center of mass jacobian of the tree. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a39bcd370f122b50906c7f094baa3f008"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual yarp::sig::Vector iCub::iDynTree::iDynTreeInterface::getCOM </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Center of Mass of the specified part (if no part is specified, get the joint torques of all the tree) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Center of Mass vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78db9b2f394c81140856e7e8da316e68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool iCub::iDynTree::iDynTreeInterface::getCOMJacobian </td>
+          <td>(</td>
+          <td class="paramtype">const yarp::sig::Matrix &amp;&#160;</td>
+          <td class="paramname"><em>jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>part_name</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Center of Mass Kacobian of the specified part (if no part is specified, get the joint torques of all the tree) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jac</td><td>the output jacobiam matrix </td></tr>
+    <tr><td class="paramname">part_name</td><td>optional: the name of the part of joints to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if succeeds, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -649,7 +831,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 22 2013 17:49:59 for iDynTree by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 26 2013 17:11:14 for iDynTree by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
